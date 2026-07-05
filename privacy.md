@@ -6,7 +6,7 @@ permalink: /privacy/
 
 **Last Updated:** June 11, 2026
 
-Welcome to NotePo ("we", "our", or "us"). We are committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use the NotePo mobile application (the "App").
+Welcome to ListPo ("we", "our", or "us"). We are committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use the ListPo mobile application (the "App").
 
 Please read this Privacy Policy carefully. If you do not agree with the terms of this privacy policy, please do not access the application.
 
