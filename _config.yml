@@ -1,7 +1,7 @@
-title: ListPo
-description: "A beautiful, minimal note-taking app designed to help you capture your thoughts quickly and elegantly."
-url: "https://notepoapp.github.io/"
-author: "ListPo"
+title: Manage Tab
+description: "Manage your Tabs"
+url: "https://managetab.jhuppo.com/"
+author: "Manage Tab"
 image: "/assets/images/logo.webp"
 logo: "/assets/images/logo.webp"
 theme: minima

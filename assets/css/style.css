@@ -142,6 +142,7 @@ body {
 .screenshots-container {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: clamp(0.5rem, 1.5vw, 1.5rem);
   padding: 2rem clamp(1rem, 4vw, 4rem);
   overflow-x: auto;
@@ -155,29 +156,14 @@ body {
 
 .screenshot-image {
   flex: 0 0 auto;
-  width: clamp(120px, 16vw, 250px);
-  height: auto;
-  aspect-ratio: 1 / 2;
-  object-fit: cover;
+  height: clamp(250px, 40vw, 400px);
+  width: auto;
   border-radius: clamp(10px, 1.5vw, 20px);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
   background-color: #000;
 }
 
-/* Privacy Link */
-.privacy-link {
-  display: inline-block;
-  margin-top: 2.5rem;
-  color: rgba(0, 0, 0, 0.7);
-  text-decoration: none;
-  font-size: 0.85rem;
-  transition: color 0.2s;
-}
 
-.privacy-link:hover {
-  color: #000;
-  text-decoration: underline;
-}
 
 /* Responsive */
 @media (max-width: 768px) {

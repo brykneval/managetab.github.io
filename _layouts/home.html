@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ site.title }} - {{ site.description }}</title>
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
-  <link rel="icon" type="image/png" href="{{ '/favicon.ico' | relative_url }}">
+  <link rel="icon" type="image/png" href="{{ '/favicon.png' | relative_url }}">
   {% seo %}
 </head>
 
@@ -15,19 +15,19 @@
     <header class="header">
       <div class="logo-container">
         <a href="/">
-          <img src="{{ '/assets/images/logo.webp' | relative_url }}" alt="ListPo Logo" class="logo-image" fetchpriority="high" width="320" height="320">
+          <img src="{{ '/assets/images/logo.webp' | relative_url }}" alt="Manage Tab Logo" class="logo-image"
+            fetchpriority="high" width="320" height="320">
         </a>
       </div>
     </header>
 
     <div class="screenshots-container">
-      <img src="{{ '/assets/images/notes.webp' | relative_url }}" alt="Notes Screen" class="screenshot-image" fetchpriority="high" width="250" height="500">
-      <img src="{{ '/assets/images/dark-mode.webp' | relative_url }}" alt="Dark Mode Screen" class="screenshot-image" width="250" height="500">
-      <img src="{{ '/assets/images/reminders.webp' | relative_url }}" alt="Reminders Screen" class="screenshot-image" loading="lazy" width="250" height="500">
-      <img src="{{ '/assets/images/viewing-notes.webp' | relative_url }}" alt="Viewing Notes Screen"
-        class="screenshot-image" loading="lazy" width="250" height="500">
-      <img src="{{ '/assets/images/more-options.webp' | relative_url }}" alt="More Options Screen"
-        class="screenshot-image" loading="lazy" width="250" height="500">
+      <img src="{{ '/assets/images/light-mode.webp' | relative_url }}" alt="Light Mode Screen" class="screenshot-image"
+        fetchpriority="high">
+      <img src="{{ '/assets/images/settings.webp' | relative_url }}" alt="Settings Screen" class="screenshot-image"
+        loading="lazy">
+      <img src="{{ '/assets/images/dark-mode.webp' | relative_url }}" alt="Dark Mode Screen" class="screenshot-image"
+        loading="lazy">
     </div>
 
     <section class="hero">
@@ -35,8 +35,6 @@
       <div class="content-area">
         {{ content }}
       </div>
-      
-      <a href="/privacy/" class="privacy-link">Privacy Policy</a>
     </section>
   </div>
 </body>
