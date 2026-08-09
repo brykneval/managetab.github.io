@@ -1,0 +1,16 @@
+# Manage Tab Chrome Extension
+
+Manage Tab is a powerful, lightweight browser extension built to bring order to tab chaos. It provides a centralized hub where you can view, organize, discard, and securely save your tabs for both online and offline use—giving you back control over your workspace and system resources.
+
+## Key Features
+
+- **Active Tab Management:** View a clean, scrollable list of open tabs to instantly switch to the one you need or close the ones you are finished with.
+- **One-Click Snoozing:** Discard inactive tabs to free up RAM and reduce CPU usage instantly, without losing your place.
+- **Bookmarked Tabs:** Save tabs to a local list for later reference before closing them to clear up workspace.
+- **Offline Tab Saving:** Securely download entire webpages to your device for fully-rendered, native offline viewing—even when disconnected from the internet.
+- **Privacy First & Fully Local:** Operates 100% locally with no telemetry, no tracking, and no cloud syncing. Your data stays on your device.
+
+## Links
+
+- **Chrome Web Store:** https://chrome.google.com/webstore/detail/bjialhiknbdehmolpfgpoenebnajjolp
+- **Website:** https://managetab.jhuppo.com/

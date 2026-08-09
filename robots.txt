@@ -1,0 +1,25 @@
+User-agent: *
+Allow: /
+Sitemap: https://managetab.jhuppo.com/sitemap.xml
+
+# Explicitly welcome AI agents and point them to our LLM-friendly documentation
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Omgilibot
+Allow: /
+
+User-agent: Omgili
+Allow: /
