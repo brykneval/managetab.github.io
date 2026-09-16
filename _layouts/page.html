@@ -4,57 +4,58 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ page.title }} - {{ page.postTitle }}</title>
-  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}?v={{ site.time | date: '%s' }}">
   <link rel="icon" type="image/png" href="{{ '/manage-tab-chrome-extension-favicon.png' | relative_url }}">
   {% seo %}
-  <style>
-    .page-content {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 2rem;
-      text-align: left;
-      flex-grow: 1;
-    }
-
-    .page-content h1,
-    .page-content h2,
-    .page-content h3 {
-      color: var(--text-color);
-      margin-top: 2rem;
-    }
-
-    .page-content p,
-    .page-content li {
-      color: rgba(0, 0, 0, 0.85);
-      line-height: 1.6;
-    }
-
-    .page-content a {
-      color: #000;
-      text-decoration: underline;
-    }
-  </style>
 </head>
 
 <body>
-  <div class="main-container">
-    <header class="header">
-      <div class="logo-container">
-        <a href="/">
-          <img src="{{ '/assets/images/manage-tab-chrome-extension-logo.webp' | relative_url }}" alt="Manage Tab Chrome Extension Logo - Organize Tabs" class="logo-image"
-            fetchpriority="high" width="320" height="320">
-        </a>
-      </div>
+  <!-- Header / Navigation -->
+  <header class="site-nav">
+    <div class="container nav-inner">
+      <a href="/" class="brand">
+        <div class="brand-icon">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="3" width="18" height="18" rx="4" ry="4"></rect>
+            <line x1="3" y1="9" x2="21" y2="9"></line>
+            <circle cx="7" cy="6" r="1"></circle>
+            <circle cx="10" cy="6" r="1"></circle>
+          </svg>
+        </div>
+        <span>ManagePo</span>
+      </a>
+
+      <a href="https://chrome.google.com/webstore/detail/iahnmbgmgdnaeiahklhnmgjnigihaabo" target="_blank"
+        rel="noopener noreferrer" class="nav-cta">
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="10"></circle>
+          <line x1="12" y1="8" x2="12" y2="16"></line>
+          <line x1="8" y1="12" x2="16" y2="12"></line>
+        </svg>
+        <span>Add to Chrome</span>
+      </a>
+    </div>
+  </header>
+
+  <main class="page-container">
+    <header class="page-header">
+      <h1 class="page-title">{{ page.title }}</h1>
+      {% if page.description %}
+      <p style="color: var(--text-muted); font-size: 1.05rem;">{{ page.description }}</p>
+      {% endif %}
     </header>
 
-    <main class="page-content">
-      <h1>{{ page.title }}</h1>
+    <div class="page-body">
       {{ content }}
-    </main>
+    </div>
+  </main>
 
-  </div>
-  </div>
+  {% include footer.html %}
 </body>
 
 </html>

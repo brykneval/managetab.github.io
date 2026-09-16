@@ -1,9 +1,9 @@
-title: "Manage Tab - Organize Tabs on Chrome Extension"
-description: "The best Chrome extension to manage, organize, and snooze your tabs. Free up memory, save tabs for offline reading, and control your tab chaos easily."
-keywords: "manage tab chrome extension, organize tab on chrome extension, tab manager chrome, snooze tabs, offline tab reader"
-url: "https://managetab.jhuppo.com/"
-author: "Manage Tab"
-image: "/assets/images/manage-tab-chrome-extension-logo.webp"
+title: "ManagePo: Manage Tabs"
+description: "Manages tabs for chrome, free up RAM and CPU, add bookmark, save offline, remove history."
+keywords: "manage tab chrome extension, organize tab on chrome extension, tab manager chrome, snooze tabs, offline tab reader, free RAM, free CPU"
+url: "https://managepo.jhuppo.com"
+author: "ManagePo"
+image: "/assets/images/manage-tab-chrome-extension-summary.webp"
 logo: "/assets/images/manage-tab-chrome-extension-logo.webp"
 theme: minima
 plugins:

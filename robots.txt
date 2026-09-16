@@ -1,6 +1,6 @@
 User-agent: *
 Allow: /
-Sitemap: https://managetab.jhuppo.com/sitemap.xml
+Sitemap: https://managepo.jhuppo.com/sitemap.xml
 
 # Explicitly welcome AI agents and point them to our LLM-friendly documentation
 User-agent: GPTBot

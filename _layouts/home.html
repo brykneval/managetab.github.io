@@ -4,39 +4,207 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ site.title }} - {{ site.description }}</title>
-  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <meta name="keywords" content="{{ site.keywords }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}?v={{ site.time | date: '%s' }}">
   <link rel="icon" type="image/png" href="{{ '/manage-tab-chrome-extension-favicon.png' | relative_url }}">
   {% seo %}
 </head>
 
 <body>
-  <div class="main-container">
-    <header class="header">
-      <div class="logo-container">
-        <a href="/">
-          <img src="{{ '/assets/images/manage-tab-chrome-extension-logo.webp' | relative_url }}" alt="Manage Tab Chrome Extension Logo - Organize Tabs" class="logo-image"
-            fetchpriority="high" width="320" height="320">
+
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+
+      <h1 class="hero-title">
+        Control your tabs.<br>
+        <span>Reclaim your memory.</span>
+      </h1>
+
+      <p class="hero-subtitle">
+        Free up RAM and CPU with one-click tab snoozing, bookmark sessions locally, and archive entire web pages for
+        offline reading — zero cloud syncing, 100% on your device.
+      </p>
+
+      <div class="hero-actions">
+        <a href="https://chrome.google.com/webstore/detail/iahnmbgmgdnaeiahklhnmgjnigihaabo" target="_blank"
+          rel="noopener noreferrer" class="btn-primary">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="20" height="20">
+            <defs>
+              <linearGradient id="g-red" x1="3.2" y1="15" x2="44.8" y2="15" gradientUnits="userSpaceOnUse">
+                <stop offset="0" stop-color="#d93025" />
+                <stop offset="1" stop-color="#ea4335" />
+              </linearGradient>
+              <linearGradient id="g-yellow" x1="20.7" y1="47.7" x2="41.5" y2="11.7" gradientUnits="userSpaceOnUse">
+                <stop offset="0" stop-color="#fcc934" />
+                <stop offset="1" stop-color="#fbbc04" />
+              </linearGradient>
+              <linearGradient id="g-green" x1="26.6" y1="46.5" x2="5.8" y2="10.5" gradientUnits="userSpaceOnUse">
+                <stop offset="0" stop-color="#1e8e3e" />
+                <stop offset="1" stop-color="#34a853" />
+              </linearGradient>
+            </defs>
+            <circle cx="24" cy="24" r="12" fill="#fff" />
+            <path d="M24,12H44.8A24,24,0,0,0,3.2,12L13.6,30A12,12,0,0,1,24,12Z" fill="url(#g-red)" />
+            <circle cx="24" cy="24" r="9.5" fill="#1a73e8" />
+            <path d="M34.4,30,24,48A24,24,0,0,0,44.8,12H24A12,12,0,0,1,34.4,30Z" fill="url(#g-yellow)" />
+            <path d="M13.6,30,3.2,12A24,24,0,0,0,24,48L34.4,30A12,12,0,0,1,13.6,30Z" fill="url(#g-green)" />
+          </svg>
+          <span>Add to Chrome — Free</span>
         </a>
       </div>
-    </header>
 
-    <div class="screenshots-container">
-      <img src="{{ '/assets/images/manage-tab-chrome-extension-light-mode.webp' | relative_url }}" alt="Organize Tab on Chrome Extension Light Mode UI" class="screenshot-image"
-        fetchpriority="high">
-      <img src="{{ '/assets/images/manage-tab-chrome-extension-settings.webp' | relative_url }}" alt="Manage Tab Chrome Extension Settings" class="screenshot-image"
-        loading="lazy">
-      <img src="{{ '/assets/images/manage-tab-chrome-extension-dark-mode.webp' | relative_url }}" alt="Tab Manager Chrome Extension Dark Mode UI" class="screenshot-image"
-        loading="lazy">
-    </div>
-
-    <section class="hero">
-
-      <div class="content-area">
-        {{ content }}
+      <div class="guarantees-bar">
+        <div class="guarantee-item">
+          <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+          </svg>
+          <span>100% Local Storage</span>
+        </div>
+        <div class="guarantee-item">
+          <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+          </svg>
+          <span>Instant RAM Saver</span>
+        </div>
+        <div class="guarantee-item">
+          <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"></circle>
+            <path d="m4.9 4.9 14.2 14.2"></path>
+          </svg>
+          <span>Zero Telemetry</span>
+        </div>
+        <div class="guarantee-item">
+          <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path
+              d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z">
+            </path>
+          </svg>
+          <span>Offline Web Pages</span>
+        </div>
       </div>
-    </section>
-  </div>
+    </div>
+  </section>
+
+  <!-- Features Section (With Every Screenshot Visible) -->
+  <section class="features-section" id="features">
+    <div class="container">
+
+      <!-- Seamless Random Screenshots Grid (No Boundaries) -->
+      <div class="random-screenshots-grid" id="screenshots">
+        <div class="random-shot-item shot-light">
+          <img src="{{ '/assets/images/manage-tab-chrome-extension-light-mode.webp' | relative_url }}"
+            alt="ManagePo Light Mode UI" class="random-shot-img" width="400" height="361" fetchpriority="high" decoding="async">
+        </div>
+
+        <div class="random-shot-item shot-summary" id="overview">
+          <img src="{{ '/assets/images/manage-tab-chrome-extension-summary.webp' | relative_url }}"
+            alt="ManagePo Architecture Overview" class="random-shot-img" width="1000" height="625" fetchpriority="high" decoding="async">
+        </div>
+
+        <div class="random-shot-item shot-settings">
+          <img src="{{ '/assets/images/manage-tab-chrome-extension-settings.webp' | relative_url }}"
+            alt="ManagePo Settings & Controls" class="random-shot-img" width="400" height="408" loading="lazy" decoding="async">
+        </div>
+
+        <div class="random-shot-item shot-dark">
+          <img src="{{ '/assets/images/manage-tab-chrome-extension-dark-mode.webp' | relative_url }}"
+            alt="ManagePo Dark Mode UI" class="random-shot-img" width="400" height="360" loading="lazy" decoding="async">
+        </div>
+      </div>
+
+      <!-- Detailed Bento Grid -->
+      <div class="bento-grid">
+        <!-- Snooze Card -->
+        <div class="bento-card bento-col-8">
+          <div>
+            <span class="pill-tag">RAM & CPU Saver</span>
+            <h2 class="bento-title">One-Click Inactive Tab Snooze</h2>
+            <p class="bento-desc">
+              Discard idle background tabs instantly with a single click. Stops loud computer fans, cuts runaway memory
+              consumption, and prolongs battery life without ever losing your position or URL history.
+            </p>
+          </div>
+          <div class="bento-stat">
+            <span class="bento-stat-val">Up to 80%</span>
+            <span class="bento-stat-label">Memory Freed Immediately</span>
+          </div>
+        </div>
+
+        <!-- Offline Archive Card -->
+        <div class="bento-card bento-col-4 offline-card">
+          <div>
+            <span class="pill-tag">True Offline</span>
+            <h2 class="bento-title">Offline Page Archiving</h2>
+            <p class="bento-desc">
+              Download fully-rendered web pages to your local drive. Read critical research on airplanes or during
+              outages even if the original website goes down.
+            </p>
+          </div>
+          <div class="bento-stat">
+            <span class="bento-stat-val">Native</span>
+            <span class="bento-stat-label">HTML Snapshot Engine</span>
+          </div>
+        </div>
+
+        <!-- Session Bookmarking -->
+        <div class="bento-card bento-col-4">
+          <div>
+            <h2 class="bento-title">Local Tab Bookmarks</h2>
+            <p class="bento-desc">
+              Save tabs into a neat local session list before closing them. Keep your browser clean without losing
+              important reference material.
+            </p>
+          </div>
+          <div class="bento-stat">
+            <span class="bento-stat-val">1-Click</span>
+            <span class="bento-stat-label">Restore Session</span>
+          </div>
+        </div>
+
+        <!-- Clean Navigation & Search -->
+        <div class="bento-card bento-col-4">
+          <div>
+            <h2 class="bento-title">Fast Tab Switching</h2>
+            <p class="bento-desc">
+              No more squinting at micro-sized browser tabs. View your active tabs in a clean, scrollable list and jump
+              immediately to what you need.
+            </p>
+          </div>
+          <div class="bento-stat">
+            <span class="bento-stat-val">Instant</span>
+            <span class="bento-stat-label">Zero-lag Filter</span>
+          </div>
+        </div>
+
+        <!-- Privacy Card -->
+        <div class="bento-card bento-col-4">
+          <div>
+            <h2 class="bento-title">100% Private & Local</h2>
+            <p class="bento-desc">
+              Zero tracking, zero telemetry, and no accounts. Your URLs, bookmarks, and offline pages never leave your
+              computer.
+            </p>
+          </div>
+          <div class="bento-stat">
+            <span class="bento-stat-val">0 bytes</span>
+            <span class="bento-stat-label">Sent to External Servers</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  {% include footer.html %}
 </body>
 
 </html>
